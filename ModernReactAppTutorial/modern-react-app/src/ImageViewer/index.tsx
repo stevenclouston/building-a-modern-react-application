@@ -51,7 +51,7 @@ const Viewer = () => {
   };
 
   React.useEffect(() => {
-    toast.success("Active image changed", {});
+    //toast.success("Active image changed", {});
   }, [activeImageId]);
 
   const activeImage = images[activeImageId];

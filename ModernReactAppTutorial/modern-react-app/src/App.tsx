@@ -8,6 +8,7 @@ import WithoutUseCallbackDemo from "./HookExamples/WithoutUseCallbackDemo";
 import WithUseCallbackDemo from "./HookExamples/WithUseCallbackDemo";
 import WithUseCallbackDependenciesDemo from "./HookExamples/WithUseCallbackDependenciesDemo";
 import ImageViewerWrapper from "./ImageViewerWithContext/ImageViewerWrapper";
+import Counter from "./HookExamples/useEffectExample";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           pauseOnHover
         />
         {/* Same as */}
+        <Counter />
         <Viewer />
         <WithoutUseCallbackDemo />
         <WithUseCallbackDemo />
