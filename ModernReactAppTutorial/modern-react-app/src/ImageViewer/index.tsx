@@ -4,6 +4,7 @@ import { Image } from "./ImageThumb/types";
 import ImageTitle from "./ImageTitle";
 import ImageThumb from "./ImageThumb";
 import { toast } from "react-toastify";
+import { useState } from "react";
 
 const initialImageState: { [id: string]: Image } = {
   1: {
@@ -50,8 +51,11 @@ const Viewer = () => {
     });
   };
 
+  const [count, setCount] = useState(0);
+
   React.useEffect(() => {
-    //toast.success("Active image changed", {});
+    toast.success(`Active image changed ${count} times`, {});
+    setCount(count + 1);
   }, [activeImageId]);
 
   const activeImage = images[activeImageId];

@@ -4,11 +4,13 @@ import "./App.css";
 import Viewer from "./ImageViewer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import WithoutUseCallbackDemo from "./HookExamples/WithoutUseCallbackDemo";
-import WithUseCallbackDemo from "./HookExamples/WithUseCallbackDemo";
-import WithUseCallbackDependenciesDemo from "./HookExamples/WithUseCallbackDependenciesDemo";
+import WithoutUseCallbackDemo from "./CallbackExamples/WithoutUseCallbackDemo";
+import WithUseCallbackDemo from "./CallbackExamples/WithUseCallbackDemo";
+import WithUseCallbackDependenciesDemo from "./CallbackExamples/WithUseCallbackDependenciesDemo";
 import ImageViewerWrapper from "./ImageViewerWithContext/ImageViewerWrapper";
-import Counter from "./HookExamples/useEffectExample";
+import Counter from "./CallbackExamples/useEffectExample";
+import Toggle from "./ToggleExample";
+import ToggleWithHook from "./ToggleExample/ToogleWithHook";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <WithUseCallbackDemo />
         <WithUseCallbackDependenciesDemo />
         <ImageViewerWrapper />
+        <Toggle />
+        <ToggleWithHook />
       </header>
     </div>
   );

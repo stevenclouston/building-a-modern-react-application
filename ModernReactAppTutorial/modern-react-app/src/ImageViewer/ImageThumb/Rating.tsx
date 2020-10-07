@@ -16,6 +16,7 @@ const Rating = ({ imageId, updateRating, stars, small = false }: Props) => {
   const handleClick = (index: number) => {
     updateRating && updateRating(imageId, index + stars + 1);
   };
+
   return (
     <div
       className={classNames(
