@@ -11,6 +11,7 @@ import ImageViewerWrapper from "./ImageViewerWithContext/ImageViewerWrapper";
 import Counter from "./CallbackExamples/useEffectExample";
 import Toggle from "./ToggleExample";
 import ToggleWithHook from "./ToggleExample/ToogleWithHook";
+import Checkout from "./CustomHooksExample";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           pauseOnHover
         />
         {/* Same as */}
+        <Checkout />
         <Counter />
         <Viewer />
         <WithoutUseCallbackDemo />
